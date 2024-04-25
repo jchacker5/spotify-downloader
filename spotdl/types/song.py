@@ -167,6 +167,8 @@ class Song:
         raw_search_results = Song.search(search_term)
 
         if len(raw_search_results["tracks"]["items"]) == 0:
+            with open('failedsonglog.txt', 'a') as failed_song_log:
+                failed_song_log.write(f"{search_term}")
             raise SongError(f"No results found for: {search_term}")
 
         return Song.from_url(
