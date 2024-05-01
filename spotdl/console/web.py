@@ -66,7 +66,7 @@ def web(web_settings: WebOptions, downloader_settings: DownloaderOptions):
     logger.info("Updating web app \n")
     web_app_dir = str(get_spotdl_path().absolute())
     download_github_dir(
-        "https://github.com/spotdl/web-ui/tree/master/dist",
+        "https://github.com/SamuelR827/web-ui/tree/master/dist",
         output_dir=web_app_dir,
     )
 
@@ -82,9 +82,11 @@ def web(web_settings: WebOptions, downloader_settings: DownloaderOptions):
     # Add the CORS middleware
     app_state.api.add_middleware(
         CORSMiddleware,
-        allow_origins=ALLOWED_ORIGINS + web_settings["allowed_origins"]
-        if web_settings["allowed_origins"]
-        else ALLOWED_ORIGINS,
+        allow_origins=(
+            ALLOWED_ORIGINS + web_settings["allowed_origins"]
+            if web_settings["allowed_origins"]
+            else ALLOWED_ORIGINS
+        ),
         allow_credentials=True,
         allow_methods=["*"],
         allow_headers=["*"],

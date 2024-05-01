@@ -281,14 +281,23 @@ def get_simple_songs(
             songs.append(Song.from_search_term(request))
 
     for song_list in lists:
+        # list comprehension to remove duplicate song urls from displaying from query
+        # using list comprehension + enumerate() to remove duplicated from list
+        # https://www.geeksforgeeks.org/python-ways-to-remove-duplicates-from-list/
+        unique_urls = [
+            i for n, i in enumerate(song_list.urls) if i not in song_list.urls[:n]
+        ]
+        unique_song = [
+            i for n, i in enumerate(song_list.songs) if i not in song_list.songs[:n]
+        ]
         logger.info(
             "Found %s songs in %s (%s)",
-            len(song_list.urls),
+            len(unique_urls),
             song_list.name,
             song_list.__class__.__name__,
         )
 
-        for index, song in enumerate(song_list.songs):
+        for index, song in enumerate(unique_song):
             song_data = song.json
             song_data["list_name"] = song_list.name
             song_data["list_url"] = song_list.url
@@ -629,9 +638,9 @@ def create_ytm_playlist(url: str, fetch_songs: bool = True) -> Playlist:
         raise ValueError(f"Couldn't fetch playlist: {url}")
 
     metadata = {
-        "description": playlist["description"]
-        if playlist["description"] is not None
-        else "",
+        "description": (
+            playlist["description"] if playlist["description"] is not None else ""
+        ),
         "author_url": f"https://music.youtube.com/channel/{playlist['author']['id']}",
         "author_name": playlist["author"]["name"],
         "cover_url": playlist["thumbnails"][0]["url"],
@@ -648,9 +657,11 @@ def create_ytm_playlist(url: str, fetch_songs: bool = True) -> Playlist:
             name=track["title"],
             artists=[artist["name"] for artist in track["artists"]],
             artist=track["artists"][0]["name"],
-            album_name=track.get("album", {}).get("name")
-            if track.get("album") is not None
-            else None,
+            album_name=(
+                track.get("album", {}).get("name")
+                if track.get("album") is not None
+                else None
+            ),
             duration=track.get("duration_seconds"),
             explicit=track.get("isExplicit"),
             download_url=f"https://music.youtube.com/watch?v={track['videoId']}",
