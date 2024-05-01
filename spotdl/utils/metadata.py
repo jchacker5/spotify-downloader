@@ -76,6 +76,7 @@ M4A_TAG_PRESET = {
     "date": "\xa9day",
     "title": "\xa9nam",
     "year": "\xa9day",
+    "albumreleaseyear": "\xa9day",  # Added album release year
     "comment": "\xa9cmt",
     "group": "\xa9grp",
     "writer": "\xa9wrt",
@@ -100,6 +101,7 @@ MP3_TAG_PRESET = {
     "date": "TDRC",
     "title": "TIT2",
     "year": "TDRC",
+    "album_release_year": "TDRL",  # Added album release year
     "comment": "COMM::XXX",
     "group": "TIT1",
     "writer": "TEXT",
@@ -128,6 +130,7 @@ TAG_TO_SONG = {
     "genre": "genres",
     "discnumber": "disc_number",
     "year": "year",
+    "albumreleaseyear": "album_release_year",  # Added album release year
     "date": "date",
     "tracknumber": "track_number",
     "encodedby": "publisher",
@@ -204,6 +207,12 @@ def embed_metadata(output_file: Path, song: Song, id3_separator: str = "/"):
 
     if song.download_url and encoding != "mp3":
         audio_file[tag_preset["comment"]] = song.download_url
+
+    # Embed album release year
+    if encoding == "mp3":
+        audio_file.add(TDRC(encoding=Encoding.UTF8, text=str(song.album_release_year)))
+    elif encoding == "m4a":
+        audio_file["\xa9day"] = str(song.album_release_year)
 
     # Embed some metadata in format specific ways
     if encoding in ["flac", "ogg", "opus"]:
