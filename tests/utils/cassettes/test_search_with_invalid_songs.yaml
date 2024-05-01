@@ -1,0 +1,147 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, br
+      Authorization:
+      - Bearer BQCfuDLAv0mPgHu-2z3QFqU-RECfIFaej0rpykKpljBT-4DtdQBkOWgltj_R39F7LWBSBxuJ_3lNYr2V6g5IaqpP7os_aCi_eIW5--ZAFDMmVZiwByE
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.31.0
+    method: GET
+    uri: https://api.spotify.com/v1/playlists/3sthpHNkKM8roO6FUDC4lK?additional_types=track
+  response:
+    body:
+      string: '{"collaborative":false,"description":"","external_urls":{"spotify":"https://open.spotify.com/playlist/3sthpHNkKM8roO6FUDC4lK"},"followers":{"href":null,"total":0},"href":"https://api.spotify.com/v1/playlists/3sthpHNkKM8roO6FUDC4lK?additional_types=track","id":"3sthpHNkKM8roO6FUDC4lK","images":[{"height":null,"url":"https://i.scdn.co/image/ab67616d00001e023dbfd3a1c6089e159424de0f","width":null}],"name":"10
+        Hour Box Fan (No Distractions)","owner":{"display_name":"SDragon827","external_urls":{"spotify":"https://open.spotify.com/user/xd9vfl7yp0h96uecfjc6vyoja"},"href":"https://api.spotify.com/v1/users/xd9vfl7yp0h96uecfjc6vyoja","id":"xd9vfl7yp0h96uecfjc6vyoja","type":"user","uri":"spotify:user:xd9vfl7yp0h96uecfjc6vyoja"},"primary_color":null,"public":true,"snapshot_id":"AAAABLIWkqt7iMWeVaZoZ77eisqfTv3B","tracks":{"href":"https://api.spotify.com/v1/playlists/3sthpHNkKM8roO6FUDC4lK/tracks?offset=0&limit=100&additional_types=track","items":[{"added_at":"2024-05-01T21:32:05Z","added_by":{"external_urls":{"spotify":"https://open.spotify.com/user/xd9vfl7yp0h96uecfjc6vyoja"},"href":"https://api.spotify.com/v1/users/xd9vfl7yp0h96uecfjc6vyoja","id":"xd9vfl7yp0h96uecfjc6vyoja","type":"user","uri":"spotify:user:xd9vfl7yp0h96uecfjc6vyoja"},"is_local":false,"primary_color":null,"track":{"preview_url":"https://p.scdn.co/mp3-preview/9e206c7ce587e268792e9842ddaf813430198cd8?cid=5f573c9620494bae87890c0f08a60293","available_markets":["AR","AU","AT","BE","BO","BR","BG","CA","CL","CO","CR","CY","CZ","DK","DO","DE","EC","EE","SV","FI","FR","GR","GT","HN","HK","HU","IS","IE","IT","LV","LT","LU","MY","MT","MX","NL","NZ","NI","NO","PA","PY","PE","PH","PL","PT","SG","SK","ES","SE","CH","TW","TR","UY","US","GB","AD","LI","MC","ID","JP","TH","VN","RO","IL","ZA","SA","AE","BH","QA","OM","KW","EG","MA","DZ","TN","LB","JO","PS","IN","BY","KZ","MD","UA","AL","BA","HR","ME","MK","RS","SI","KR","BD","PK","LK","GH","KE","NG","TZ","UG","AG","AM","BS","BB","BZ","BT","BW","BF","CV","CW","DM","FJ","GM","GE","GD","GW","GY","HT","JM","KI","LS","LR","MW","MV","ML","MH","FM","NA","NR","NE","PW","PG","PR","WS","SM","ST","SN","SC","SL","SB","KN","LC","VC","SR","TL","TO","TT","TV","VU","AZ","BN","BI","KH","CM","TD","KM","GQ","SZ","GA","GN","KG","LA","MO","MR","MN","NP","RW","TG","UZ","ZW","BJ","MG","MU","MZ","AO","CI","DJ","ZM","CD","CG","IQ","LY","TJ","VE","ET","XK"],"explicit":false,"type":"track","episode":false,"track":true,"album":{"available_markets":["AR","AU","AT","BE","BO","BR","BG","CA","CL","CO","CR","CY","CZ","DK","DO","DE","EC","EE","SV","FI","FR","GR","GT","HN","HK","HU","IS","IE","IT","LV","LT","LU","MY","MT","MX","NL","NZ","NI","NO","PA","PY","PE","PH","PL","PT","SG","SK","ES","SE","CH","TW","TR","UY","US","GB","AD","LI","MC","ID","JP","TH","VN","RO","IL","ZA","SA","AE","BH","QA","OM","KW","EG","MA","DZ","TN","LB","JO","PS","IN","BY","KZ","MD","UA","AL","BA","HR","ME","MK","RS","SI","KR","BD","PK","LK","GH","KE","NG","TZ","UG","AG","AM","BS","BB","BZ","BT","BW","BF","CV","CW","DM","FJ","GM","GE","GD","GW","GY","HT","JM","KI","LS","LR","MW","MV","ML","MH","FM","NA","NR","NE","PW","PG","PR","WS","SM","ST","SN","SC","SL","SB","KN","LC","VC","SR","TL","TO","TT","TV","VU","AZ","BN","BI","KH","CM","TD","KM","GQ","SZ","GA","GN","KG","LA","MO","MR","MN","NP","RW","TG","UZ","ZW","BJ","MG","MU","MZ","AO","CI","DJ","ZM","CD","CG","IQ","LY","TJ","VE","ET","XK"],"type":"album","album_type":"single","href":"https://api.spotify.com/v1/albums/0oBy1HUMESM4CB2IMty3uF","id":"0oBy1HUMESM4CB2IMty3uF","images":[{"url":"https://i.scdn.co/image/ab67616d0000b2733dbfd3a1c6089e159424de0f","width":640,"height":640},{"url":"https://i.scdn.co/image/ab67616d00001e023dbfd3a1c6089e159424de0f","width":300,"height":300},{"url":"https://i.scdn.co/image/ab67616d000048513dbfd3a1c6089e159424de0f","width":64,"height":64}],"name":"10
+        Hour Box Fan (No Distractions)","release_date":"2022-12-09","release_date_precision":"day","uri":"spotify:album:0oBy1HUMESM4CB2IMty3uF","artists":[{"external_urls":{"spotify":"https://open.spotify.com/artist/4hlbhfLTIkXoXmT19oyhz5"},"href":"https://api.spotify.com/v1/artists/4hlbhfLTIkXoXmT19oyhz5","id":"4hlbhfLTIkXoXmT19oyhz5","name":"Big
+        Fan","type":"artist","uri":"spotify:artist:4hlbhfLTIkXoXmT19oyhz5"}],"external_urls":{"spotify":"https://open.spotify.com/album/0oBy1HUMESM4CB2IMty3uF"},"total_tracks":1},"artists":[{"external_urls":{"spotify":"https://open.spotify.com/artist/4hlbhfLTIkXoXmT19oyhz5"},"href":"https://api.spotify.com/v1/artists/4hlbhfLTIkXoXmT19oyhz5","id":"4hlbhfLTIkXoXmT19oyhz5","name":"Big
+        Fan","type":"artist","uri":"spotify:artist:4hlbhfLTIkXoXmT19oyhz5"}],"disc_number":1,"track_number":1,"duration_ms":35999944,"external_ids":{"isrc":"GX8LD2263319"},"external_urls":{"spotify":"https://open.spotify.com/track/07MU7EQIGGLtYdb23gC5va"},"href":"https://api.spotify.com/v1/tracks/07MU7EQIGGLtYdb23gC5va","id":"07MU7EQIGGLtYdb23gC5va","name":"10
+        Hour Box Fan (No Distractions)","popularity":45,"uri":"spotify:track:07MU7EQIGGLtYdb23gC5va","is_local":false},"video_thumbnail":{"url":null}},{"added_at":"2024-05-01T21:32:18Z","added_by":{"external_urls":{"spotify":"https://open.spotify.com/user/xd9vfl7yp0h96uecfjc6vyoja"},"href":"https://api.spotify.com/v1/users/xd9vfl7yp0h96uecfjc6vyoja","id":"xd9vfl7yp0h96uecfjc6vyoja","type":"user","uri":"spotify:user:xd9vfl7yp0h96uecfjc6vyoja"},"is_local":false,"primary_color":null,"track":{"preview_url":"https://p.scdn.co/mp3-preview/0ea9cb7bc3a358811e69994780900f6c83e3230c?cid=5f573c9620494bae87890c0f08a60293","available_markets":["AR","AU","AT","BE","BO","BR","BG","CA","CL","CO","CR","CY","CZ","DK","DO","DE","EC","EE","SV","FI","FR","GR","GT","HN","HK","HU","IS","IE","IT","LV","LT","LU","MY","MT","MX","NL","NZ","NI","NO","PA","PY","PE","PH","PL","PT","SG","SK","ES","SE","CH","TW","TR","UY","US","GB","AD","LI","MC","ID","JP","TH","VN","RO","IL","ZA","SA","AE","BH","QA","OM","KW","EG","MA","DZ","TN","LB","JO","PS","IN","BY","KZ","MD","UA","AL","BA","HR","ME","MK","RS","SI","KR","BD","PK","LK","GH","KE","NG","TZ","UG","AG","AM","BS","BB","BZ","BT","BW","BF","CV","CW","DM","FJ","GM","GE","GD","GW","GY","HT","JM","KI","LS","LR","MW","MV","ML","MH","FM","NA","NR","NE","PW","PG","PR","WS","SM","ST","SN","SC","SL","SB","KN","LC","VC","SR","TL","TO","TT","TV","VU","AZ","BN","BI","KH","CM","TD","KM","GQ","SZ","GA","GN","KG","LA","MO","MR","MN","NP","RW","TG","UZ","ZW","BJ","MG","MU","MZ","AO","CI","DJ","ZM","CD","CG","IQ","LY","TJ","VE","ET","XK"],"explicit":false,"type":"track","episode":false,"track":true,"album":{"available_markets":["AR","AU","AT","BE","BO","BR","BG","CA","CL","CO","CR","CY","CZ","DK","DO","DE","EC","EE","SV","FI","FR","GR","GT","HN","HK","HU","IS","IE","IT","LV","LT","LU","MY","MT","MX","NL","NZ","NI","NO","PA","PY","PE","PH","PL","PT","SG","SK","ES","SE","CH","TW","TR","UY","US","GB","AD","LI","MC","ID","JP","TH","VN","RO","IL","ZA","SA","AE","BH","QA","OM","KW","EG","MA","DZ","TN","LB","JO","PS","IN","BY","KZ","MD","UA","AL","BA","HR","ME","MK","RS","SI","KR","BD","PK","LK","GH","KE","NG","TZ","UG","AG","AM","BS","BB","BZ","BT","BW","BF","CV","CW","DM","FJ","GM","GE","GD","GW","GY","HT","JM","KI","LS","LR","MW","MV","ML","MH","FM","NA","NR","NE","PW","PG","PR","WS","SM","ST","SN","SC","SL","SB","KN","LC","VC","SR","TL","TO","TT","TV","VU","AZ","BN","BI","KH","CM","TD","KM","GQ","SZ","GA","GN","KG","LA","MO","MR","MN","NP","RW","TG","UZ","ZW","BJ","MG","MU","MZ","AO","CI","DJ","ZM","CD","CG","IQ","LY","TJ","VE","ET","XK"],"type":"album","album_type":"album","href":"https://api.spotify.com/v1/albums/0S7hl9NtRXGbHq9TWUVRAU","id":"0S7hl9NtRXGbHq9TWUVRAU","images":[{"url":"https://i.scdn.co/image/ab67616d0000b273343c4d74928886cd0be697fc","width":640,"height":640},{"url":"https://i.scdn.co/image/ab67616d00001e02343c4d74928886cd0be697fc","width":300,"height":300},{"url":"https://i.scdn.co/image/ab67616d00004851343c4d74928886cd0be697fc","width":64,"height":64}],"name":"Legends
+        Never Die","release_date":"2007-01-01","release_date_precision":"day","uri":"spotify:album:0S7hl9NtRXGbHq9TWUVRAU","artists":[{"external_urls":{"spotify":"https://open.spotify.com/artist/0tfnDOJ5a2ib3mHAI4qGyD"},"href":"https://api.spotify.com/v1/artists/0tfnDOJ5a2ib3mHAI4qGyD","id":"0tfnDOJ5a2ib3mHAI4qGyD","name":"The
+        Dreadnoughts","type":"artist","uri":"spotify:artist:0tfnDOJ5a2ib3mHAI4qGyD"}],"external_urls":{"spotify":"https://open.spotify.com/album/0S7hl9NtRXGbHq9TWUVRAU"},"total_tracks":11},"artists":[{"external_urls":{"spotify":"https://open.spotify.com/artist/0tfnDOJ5a2ib3mHAI4qGyD"},"href":"https://api.spotify.com/v1/artists/0tfnDOJ5a2ib3mHAI4qGyD","id":"0tfnDOJ5a2ib3mHAI4qGyD","name":"The
+        Dreadnoughts","type":"artist","uri":"spotify:artist:0tfnDOJ5a2ib3mHAI4qGyD"}],"disc_number":1,"track_number":1,"duration_ms":240280,"external_ids":{"isrc":"ushm80852320"},"external_urls":{"spotify":"https://open.spotify.com/track/6qqQMBAhewdDAdhNd8Zt02"},"href":"https://api.spotify.com/v1/tracks/6qqQMBAhewdDAdhNd8Zt02","id":"6qqQMBAhewdDAdhNd8Zt02","name":"Old
+        Maui","popularity":27,"uri":"spotify:track:6qqQMBAhewdDAdhNd8Zt02","is_local":false},"video_thumbnail":{"url":null}},{"added_at":"2024-05-01T21:32:49Z","added_by":{"external_urls":{"spotify":"https://open.spotify.com/user/xd9vfl7yp0h96uecfjc6vyoja"},"href":"https://api.spotify.com/v1/users/xd9vfl7yp0h96uecfjc6vyoja","id":"xd9vfl7yp0h96uecfjc6vyoja","type":"user","uri":"spotify:user:xd9vfl7yp0h96uecfjc6vyoja"},"is_local":false,"primary_color":null,"track":{"preview_url":"https://podz-content.spotifycdn.com/audio/clips/1vNBdtoPXnRW1x4wTRVF6x/clip_10942_70942.mp3","available_markets":["AD","AE","AG","AL","AM","AO","AR","AT","AU","AZ","BA","BB","BE","BF","BG","BH","BI","BJ","BN","BO","BR","BS","BT","BW","BZ","CA","CH","CI","CL","CM","CO","CR","CV","CW","CY","CZ","DE","DJ","DK","DM","DO","DZ","EC","EE","EG","ES","FI","FJ","FM","FR","GA","GB","GD","GE","GH","GM","GN","GQ","GR","GT","GW","GY","HK","HN","HR","HT","HU","ID","IE","IL","IN","IS","IT","JM","JO","JP","KE","KH","KI","KM","KN","KR","KW","LA","LB","LC","LI","LR","LS","LT","LU","LV","MA","MC","ME","MG","MH","MK","ML","MN","MO","MR","MT","MU","MV","MW","MX","MY","MZ","NA","NE","NG","NI","NL","NO","NP","NR","NZ","OM","PA","PE","PG","PH","PL","PS","PT","PW","PY","QA","RO","RS","RW","SA","SB","SC","SE","SG","SI","SK","SL","SM","SN","SR","ST","SV","SZ","TD","TG","TH","TL","TN","TO","TR","TT","TV","TW","TZ","UA","US","UY","UZ","VC","VN","VU","WS","XK","ZA","ZM","ZW"],"explicit":false,"type":"episode","episode":false,"track":true,"album":{"available_markets":["AD","AE","AG","AL","AM","AO","AR","AT","AU","AZ","BA","BB","BE","BF","BG","BH","BI","BJ","BN","BO","BR","BS","BT","BW","BZ","CA","CH","CI","CL","CM","CO","CR","CV","CW","CY","CZ","DE","DJ","DK","DM","DO","DZ","EC","EE","EG","ES","FI","FJ","FM","FR","GA","GB","GD","GE","GH","GM","GN","GQ","GR","GT","GW","GY","HK","HN","HR","HT","HU","ID","IE","IL","IN","IS","IT","JM","JO","JP","KE","KH","KI","KM","KN","KR","KW","LA","LB","LC","LI","LR","LS","LT","LU","LV","MA","MC","ME","MG","MH","MK","ML","MN","MO","MR","MT","MU","MV","MW","MX","MY","MZ","NA","NE","NG","NI","NL","NO","NP","NR","NZ","OM","PA","PE","PG","PH","PL","PR","PS","PT","PW","PY","QA","RO","RS","RW","SA","SB","SC","SE","SG","SI","SK","SL","SM","SN","SR","ST","SV","SZ","TD","TG","TH","TL","TN","TO","TR","TT","TV","TW","TZ","UA","US","UY","UZ","VC","VN","VU","WS","XK","ZA","ZM","ZW"],"type":"show","album_type":"compilation","href":"https://api.spotify.com/v1/shows/0yf1wvbMeB8SzDGI8zsdGu","id":"0yf1wvbMeB8SzDGI8zsdGu","images":[{"height":640,"url":"https://i.scdn.co/image/ab6765630000ba8abf0ce3aa5b5f97b051996833","width":640},{"height":300,"url":"https://i.scdn.co/image/ab67656300005f1fbf0ce3aa5b5f97b051996833","width":300},{"height":64,"url":"https://i.scdn.co/image/ab6765630000f68dbf0ce3aa5b5f97b051996833","width":64}],"name":"Skyrim
+        Book Club","release_date":null,"release_date_precision":null,"uri":"spotify:show:0yf1wvbMeB8SzDGI8zsdGu","artists":[{"external_urls":{"spotify":"https://open.spotify.com/show/0yf1wvbMeB8SzDGI8zsdGu"},"href":"https://api.spotify.com/v1/shows/0yf1wvbMeB8SzDGI8zsdGu","id":"0yf1wvbMeB8SzDGI8zsdGu","name":null,"type":"Skyrim
+        Book Club","uri":"spotify:show:0yf1wvbMeB8SzDGI8zsdGu"}],"external_urls":{"spotify":"https://open.spotify.com/album/0yf1wvbMeB8SzDGI8zsdGu"},"total_tracks":1},"artists":[{"external_urls":{"spotify":"https://open.spotify.com/show/0yf1wvbMeB8SzDGI8zsdGu"},"href":"https://api.spotify.com/v1/shows/0yf1wvbMeB8SzDGI8zsdGu","id":"0yf1wvbMeB8SzDGI8zsdGu","name":null,"type":"Skyrim
+        Book Club","uri":"spotify:show:0yf1wvbMeB8SzDGI8zsdGu"}],"disc_number":0,"track_number":0,"duration_ms":111098,"external_ids":{"spotify":"https://open.spotify.com/episode/2nst6F5fmNfJZ5w0Bzi9cC"},"external_urls":{"spotify":"https://open.spotify.com/episode/2nst6F5fmNfJZ5w0Bzi9cC"},"href":"https://api.spotify.com/v1/episodes/2nst6F5fmNfJZ5w0Bzi9cC","id":"2nst6F5fmNfJZ5w0Bzi9cC","name":"Confessions
+        of a Reluctant Recruit","popularity":0,"uri":"spotify:episode:2nst6F5fmNfJZ5w0Bzi9cC","is_local":false},"video_thumbnail":{"url":null}}],"limit":100,"next":null,"offset":0,"previous":null,"total":3},"type":"playlist","uri":"spotify:playlist:3sthpHNkKM8roO6FUDC4lK"}'
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - HTTP/2 edgeproxy, 1.1 google
+      access-control-allow-credentials:
+      - 'true'
+      access-control-allow-headers:
+      - Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version,
+        X-Cloud-Trace-Context, client-token, content-access-token
+      access-control-allow-methods:
+      - GET, POST, OPTIONS, PUT, DELETE, PATCH
+      access-control-allow-origin:
+      - '*'
+      access-control-max-age:
+      - '604800'
+      cache-control:
+      - public, max-age=0
+      content-encoding:
+      - gzip
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Wed, 01 May 2024 22:08:26 GMT
+      etag:
+      - '"MC-IjQ4YTdiNzE0OTU0YWYyZTA4N2NkNWJkMWNjODczZmY1Ig=="'
+      server:
+      - envoy
+      strict-transport-security:
+      - max-age=31536000
+      x-content-type-options:
+      - nosniff
+      x-robots-tag:
+      - noindex, nofollow
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate, br
+      Authorization:
+      - Bearer BQCfuDLAv0mPgHu-2z3QFqU-RECfIFaej0rpykKpljBT-4DtdQBkOWgltj_R39F7LWBSBxuJ_3lNYr2V6g5IaqpP7os_aCi_eIW5--ZAFDMmVZiwByE
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      User-Agent:
+      - python-requests/2.31.0
+    method: GET
+    uri: https://api.spotify.com/v1/playlists/3sthpHNkKM8roO6FUDC4lK/tracks?limit=100&offset=0&additional_types=track%2Cepisode
+  response:
+    body:
+      string: '{"href":"https://api.spotify.com/v1/playlists/3sthpHNkKM8roO6FUDC4lK/tracks?offset=0&limit=100&additional_types=track","items":[{"added_at":"2024-05-01T21:32:05Z","added_by":{"external_urls":{"spotify":"https://open.spotify.com/user/xd9vfl7yp0h96uecfjc6vyoja"},"href":"https://api.spotify.com/v1/users/xd9vfl7yp0h96uecfjc6vyoja","id":"xd9vfl7yp0h96uecfjc6vyoja","type":"user","uri":"spotify:user:xd9vfl7yp0h96uecfjc6vyoja"},"is_local":false,"primary_color":null,"track":{"preview_url":"https://p.scdn.co/mp3-preview/9e206c7ce587e268792e9842ddaf813430198cd8?cid=5f573c9620494bae87890c0f08a60293","available_markets":["AR","AU","AT","BE","BO","BR","BG","CA","CL","CO","CR","CY","CZ","DK","DO","DE","EC","EE","SV","FI","FR","GR","GT","HN","HK","HU","IS","IE","IT","LV","LT","LU","MY","MT","MX","NL","NZ","NI","NO","PA","PY","PE","PH","PL","PT","SG","SK","ES","SE","CH","TW","TR","UY","US","GB","AD","LI","MC","ID","JP","TH","VN","RO","IL","ZA","SA","AE","BH","QA","OM","KW","EG","MA","DZ","TN","LB","JO","PS","IN","BY","KZ","MD","UA","AL","BA","HR","ME","MK","RS","SI","KR","BD","PK","LK","GH","KE","NG","TZ","UG","AG","AM","BS","BB","BZ","BT","BW","BF","CV","CW","DM","FJ","GM","GE","GD","GW","GY","HT","JM","KI","LS","LR","MW","MV","ML","MH","FM","NA","NR","NE","PW","PG","PR","WS","SM","ST","SN","SC","SL","SB","KN","LC","VC","SR","TL","TO","TT","TV","VU","AZ","BN","BI","KH","CM","TD","KM","GQ","SZ","GA","GN","KG","LA","MO","MR","MN","NP","RW","TG","UZ","ZW","BJ","MG","MU","MZ","AO","CI","DJ","ZM","CD","CG","IQ","LY","TJ","VE","ET","XK"],"explicit":false,"type":"track","episode":false,"track":true,"album":{"available_markets":["AR","AU","AT","BE","BO","BR","BG","CA","CL","CO","CR","CY","CZ","DK","DO","DE","EC","EE","SV","FI","FR","GR","GT","HN","HK","HU","IS","IE","IT","LV","LT","LU","MY","MT","MX","NL","NZ","NI","NO","PA","PY","PE","PH","PL","PT","SG","SK","ES","SE","CH","TW","TR","UY","US","GB","AD","LI","MC","ID","JP","TH","VN","RO","IL","ZA","SA","AE","BH","QA","OM","KW","EG","MA","DZ","TN","LB","JO","PS","IN","BY","KZ","MD","UA","AL","BA","HR","ME","MK","RS","SI","KR","BD","PK","LK","GH","KE","NG","TZ","UG","AG","AM","BS","BB","BZ","BT","BW","BF","CV","CW","DM","FJ","GM","GE","GD","GW","GY","HT","JM","KI","LS","LR","MW","MV","ML","MH","FM","NA","NR","NE","PW","PG","PR","WS","SM","ST","SN","SC","SL","SB","KN","LC","VC","SR","TL","TO","TT","TV","VU","AZ","BN","BI","KH","CM","TD","KM","GQ","SZ","GA","GN","KG","LA","MO","MR","MN","NP","RW","TG","UZ","ZW","BJ","MG","MU","MZ","AO","CI","DJ","ZM","CD","CG","IQ","LY","TJ","VE","ET","XK"],"type":"album","album_type":"single","href":"https://api.spotify.com/v1/albums/0oBy1HUMESM4CB2IMty3uF","id":"0oBy1HUMESM4CB2IMty3uF","images":[{"height":640,"url":"https://i.scdn.co/image/ab67616d0000b2733dbfd3a1c6089e159424de0f","width":640},{"height":300,"url":"https://i.scdn.co/image/ab67616d00001e023dbfd3a1c6089e159424de0f","width":300},{"height":64,"url":"https://i.scdn.co/image/ab67616d000048513dbfd3a1c6089e159424de0f","width":64}],"name":"10
+        Hour Box Fan (No Distractions)","release_date":"2022-12-09","release_date_precision":"day","uri":"spotify:album:0oBy1HUMESM4CB2IMty3uF","artists":[{"external_urls":{"spotify":"https://open.spotify.com/artist/4hlbhfLTIkXoXmT19oyhz5"},"href":"https://api.spotify.com/v1/artists/4hlbhfLTIkXoXmT19oyhz5","id":"4hlbhfLTIkXoXmT19oyhz5","name":"Big
+        Fan","type":"artist","uri":"spotify:artist:4hlbhfLTIkXoXmT19oyhz5"}],"external_urls":{"spotify":"https://open.spotify.com/album/0oBy1HUMESM4CB2IMty3uF"},"total_tracks":1},"artists":[{"external_urls":{"spotify":"https://open.spotify.com/artist/4hlbhfLTIkXoXmT19oyhz5"},"href":"https://api.spotify.com/v1/artists/4hlbhfLTIkXoXmT19oyhz5","id":"4hlbhfLTIkXoXmT19oyhz5","name":"Big
+        Fan","type":"artist","uri":"spotify:artist:4hlbhfLTIkXoXmT19oyhz5"}],"disc_number":1,"track_number":1,"duration_ms":35999944,"external_ids":{"isrc":"GX8LD2263319"},"external_urls":{"spotify":"https://open.spotify.com/track/07MU7EQIGGLtYdb23gC5va"},"href":"https://api.spotify.com/v1/tracks/07MU7EQIGGLtYdb23gC5va","id":"07MU7EQIGGLtYdb23gC5va","name":"10
+        Hour Box Fan (No Distractions)","popularity":45,"uri":"spotify:track:07MU7EQIGGLtYdb23gC5va","is_local":false},"video_thumbnail":{"url":null}},{"added_at":"2024-05-01T21:32:18Z","added_by":{"external_urls":{"spotify":"https://open.spotify.com/user/xd9vfl7yp0h96uecfjc6vyoja"},"href":"https://api.spotify.com/v1/users/xd9vfl7yp0h96uecfjc6vyoja","id":"xd9vfl7yp0h96uecfjc6vyoja","type":"user","uri":"spotify:user:xd9vfl7yp0h96uecfjc6vyoja"},"is_local":false,"primary_color":null,"track":{"preview_url":"https://p.scdn.co/mp3-preview/0ea9cb7bc3a358811e69994780900f6c83e3230c?cid=5f573c9620494bae87890c0f08a60293","available_markets":["AR","AU","AT","BE","BO","BR","BG","CA","CL","CO","CR","CY","CZ","DK","DO","DE","EC","EE","SV","FI","FR","GR","GT","HN","HK","HU","IS","IE","IT","LV","LT","LU","MY","MT","MX","NL","NZ","NI","NO","PA","PY","PE","PH","PL","PT","SG","SK","ES","SE","CH","TW","TR","UY","US","GB","AD","LI","MC","ID","JP","TH","VN","RO","IL","ZA","SA","AE","BH","QA","OM","KW","EG","MA","DZ","TN","LB","JO","PS","IN","BY","KZ","MD","UA","AL","BA","HR","ME","MK","RS","SI","KR","BD","PK","LK","GH","KE","NG","TZ","UG","AG","AM","BS","BB","BZ","BT","BW","BF","CV","CW","DM","FJ","GM","GE","GD","GW","GY","HT","JM","KI","LS","LR","MW","MV","ML","MH","FM","NA","NR","NE","PW","PG","PR","WS","SM","ST","SN","SC","SL","SB","KN","LC","VC","SR","TL","TO","TT","TV","VU","AZ","BN","BI","KH","CM","TD","KM","GQ","SZ","GA","GN","KG","LA","MO","MR","MN","NP","RW","TG","UZ","ZW","BJ","MG","MU","MZ","AO","CI","DJ","ZM","CD","CG","IQ","LY","TJ","VE","ET","XK"],"explicit":false,"type":"track","episode":false,"track":true,"album":{"available_markets":["AR","AU","AT","BE","BO","BR","BG","CA","CL","CO","CR","CY","CZ","DK","DO","DE","EC","EE","SV","FI","FR","GR","GT","HN","HK","HU","IS","IE","IT","LV","LT","LU","MY","MT","MX","NL","NZ","NI","NO","PA","PY","PE","PH","PL","PT","SG","SK","ES","SE","CH","TW","TR","UY","US","GB","AD","LI","MC","ID","JP","TH","VN","RO","IL","ZA","SA","AE","BH","QA","OM","KW","EG","MA","DZ","TN","LB","JO","PS","IN","BY","KZ","MD","UA","AL","BA","HR","ME","MK","RS","SI","KR","BD","PK","LK","GH","KE","NG","TZ","UG","AG","AM","BS","BB","BZ","BT","BW","BF","CV","CW","DM","FJ","GM","GE","GD","GW","GY","HT","JM","KI","LS","LR","MW","MV","ML","MH","FM","NA","NR","NE","PW","PG","PR","WS","SM","ST","SN","SC","SL","SB","KN","LC","VC","SR","TL","TO","TT","TV","VU","AZ","BN","BI","KH","CM","TD","KM","GQ","SZ","GA","GN","KG","LA","MO","MR","MN","NP","RW","TG","UZ","ZW","BJ","MG","MU","MZ","AO","CI","DJ","ZM","CD","CG","IQ","LY","TJ","VE","ET","XK"],"type":"album","album_type":"album","href":"https://api.spotify.com/v1/albums/0S7hl9NtRXGbHq9TWUVRAU","id":"0S7hl9NtRXGbHq9TWUVRAU","images":[{"height":640,"url":"https://i.scdn.co/image/ab67616d0000b273343c4d74928886cd0be697fc","width":640},{"height":300,"url":"https://i.scdn.co/image/ab67616d00001e02343c4d74928886cd0be697fc","width":300},{"height":64,"url":"https://i.scdn.co/image/ab67616d00004851343c4d74928886cd0be697fc","width":64}],"name":"Legends
+        Never Die","release_date":"2007-01-01","release_date_precision":"day","uri":"spotify:album:0S7hl9NtRXGbHq9TWUVRAU","artists":[{"external_urls":{"spotify":"https://open.spotify.com/artist/0tfnDOJ5a2ib3mHAI4qGyD"},"href":"https://api.spotify.com/v1/artists/0tfnDOJ5a2ib3mHAI4qGyD","id":"0tfnDOJ5a2ib3mHAI4qGyD","name":"The
+        Dreadnoughts","type":"artist","uri":"spotify:artist:0tfnDOJ5a2ib3mHAI4qGyD"}],"external_urls":{"spotify":"https://open.spotify.com/album/0S7hl9NtRXGbHq9TWUVRAU"},"total_tracks":11},"artists":[{"external_urls":{"spotify":"https://open.spotify.com/artist/0tfnDOJ5a2ib3mHAI4qGyD"},"href":"https://api.spotify.com/v1/artists/0tfnDOJ5a2ib3mHAI4qGyD","id":"0tfnDOJ5a2ib3mHAI4qGyD","name":"The
+        Dreadnoughts","type":"artist","uri":"spotify:artist:0tfnDOJ5a2ib3mHAI4qGyD"}],"disc_number":1,"track_number":1,"duration_ms":240280,"external_ids":{"isrc":"ushm80852320"},"external_urls":{"spotify":"https://open.spotify.com/track/6qqQMBAhewdDAdhNd8Zt02"},"href":"https://api.spotify.com/v1/tracks/6qqQMBAhewdDAdhNd8Zt02","id":"6qqQMBAhewdDAdhNd8Zt02","name":"Old
+        Maui","popularity":27,"uri":"spotify:track:6qqQMBAhewdDAdhNd8Zt02","is_local":false},"video_thumbnail":{"url":null}},{"added_at":"2024-05-01T21:32:49Z","added_by":{"external_urls":{"spotify":"https://open.spotify.com/user/xd9vfl7yp0h96uecfjc6vyoja"},"href":"https://api.spotify.com/v1/users/xd9vfl7yp0h96uecfjc6vyoja","id":"xd9vfl7yp0h96uecfjc6vyoja","type":"user","uri":"spotify:user:xd9vfl7yp0h96uecfjc6vyoja"},"is_local":false,"primary_color":null,"track":{"explicit":false,"audio_preview_url":"https://podz-content.spotifycdn.com/audio/clips/1vNBdtoPXnRW1x4wTRVF6x/clip_10942_70942.mp3","description":"","duration_ms":111098,"episode":true,"external_urls":{"spotify":"https://open.spotify.com/episode/2nst6F5fmNfJZ5w0Bzi9cC"},"href":"https://api.spotify.com/v1/episodes/2nst6F5fmNfJZ5w0Bzi9cC","html_description":"","id":"2nst6F5fmNfJZ5w0Bzi9cC","images":[{"height":640,"url":"https://i.scdn.co/image/ab6765630000ba8abf0ce3aa5b5f97b051996833","width":640},{"height":300,"url":"https://i.scdn.co/image/ab67656300005f1fbf0ce3aa5b5f97b051996833","width":300},{"height":64,"url":"https://i.scdn.co/image/ab6765630000f68dbf0ce3aa5b5f97b051996833","width":64}],"is_externally_hosted":false,"language":"en-US","languages":["en-US"],"name":"Confessions
+        of a Reluctant Recruit","release_date":"2024-05-01","release_date_precision":"day","available_markets":["AD","AE","AG","AL","AM","AO","AR","AT","AU","AZ","BA","BB","BE","BF","BG","BH","BI","BJ","BN","BO","BR","BS","BT","BW","BZ","CA","CH","CI","CL","CM","CO","CR","CV","CW","CY","CZ","DE","DJ","DK","DM","DO","DZ","EC","EE","EG","ES","FI","FJ","FM","FR","GA","GB","GD","GE","GH","GM","GN","GQ","GR","GT","GW","GY","HK","HN","HR","HT","HU","ID","IE","IL","IN","IS","IT","JM","JO","JP","KE","KH","KI","KM","KN","KR","KW","LA","LB","LC","LI","LR","LS","LT","LU","LV","MA","MC","ME","MG","MH","MK","ML","MN","MO","MR","MT","MU","MV","MW","MX","MY","MZ","NA","NE","NG","NI","NL","NO","NP","NR","NZ","OM","PA","PE","PG","PH","PL","PS","PT","PW","PY","QA","RO","RS","RW","SA","SB","SC","SE","SG","SI","SK","SL","SM","SN","SR","ST","SV","SZ","TD","TG","TH","TL","TN","TO","TR","TT","TV","TW","TZ","UA","US","UY","UZ","VC","VN","VU","WS","XK","ZA","ZM","ZW"],"show":{"available_markets":["AD","AE","AG","AL","AM","AO","AR","AT","AU","AZ","BA","BB","BE","BF","BG","BH","BI","BJ","BN","BO","BR","BS","BT","BW","BZ","CA","CH","CI","CL","CM","CO","CR","CV","CW","CY","CZ","DE","DJ","DK","DM","DO","DZ","EC","EE","EG","ES","FI","FJ","FM","FR","GA","GB","GD","GE","GH","GM","GN","GQ","GR","GT","GW","GY","HK","HN","HR","HT","HU","ID","IE","IL","IN","IS","IT","JM","JO","JP","KE","KH","KI","KM","KN","KR","KW","LA","LB","LC","LI","LR","LS","LT","LU","LV","MA","MC","ME","MG","MH","MK","ML","MN","MO","MR","MT","MU","MV","MW","MX","MY","MZ","NA","NE","NG","NI","NL","NO","NP","NR","NZ","OM","PA","PE","PG","PH","PL","PR","PS","PT","PW","PY","QA","RO","RS","RW","SA","SB","SC","SE","SG","SI","SK","SL","SM","SN","SR","ST","SV","SZ","TD","TG","TH","TL","TN","TO","TR","TT","TV","TW","TZ","UA","US","UY","UZ","VC","VN","VU","WS","XK","ZA","ZM","ZW"],"copyrights":[],"description":"An
+        audio book archive of all the literature and lore available in Elder Scrolls
+        V: Skyrim, and the world of Tamriel beyond.","explicit":false,"external_urls":{"spotify":"https://open.spotify.com/show/0yf1wvbMeB8SzDGI8zsdGu"},"href":"https://api.spotify.com/v1/shows/0yf1wvbMeB8SzDGI8zsdGu","html_description":"<p>An
+        audio book archive of all the literature and lore available in Elder Scrolls
+        V: Skyrim, and the world of Tamriel beyond.</p>","id":"0yf1wvbMeB8SzDGI8zsdGu","images":[{"height":640,"url":"https://i.scdn.co/image/ab6765630000ba8abf0ce3aa5b5f97b051996833","width":640},{"height":300,"url":"https://i.scdn.co/image/ab67656300005f1fbf0ce3aa5b5f97b051996833","width":300},{"height":64,"url":"https://i.scdn.co/image/ab6765630000f68dbf0ce3aa5b5f97b051996833","width":64}],"is_externally_hosted":false,"languages":["en-US"],"media_type":"audio","name":"Skyrim
+        Book Club","publisher":"Skyrim Book Club","total_episodes":1898,"type":"show","uri":"spotify:show:0yf1wvbMeB8SzDGI8zsdGu"},"track":false,"type":"episode","uri":"spotify:episode:2nst6F5fmNfJZ5w0Bzi9cC"},"video_thumbnail":{"url":null}}],"limit":100,"next":null,"offset":0,"previous":null,"total":3}'
+    headers:
+      Alt-Svc:
+      - h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - HTTP/2 edgeproxy, 1.1 google
+      access-control-allow-credentials:
+      - 'true'
+      access-control-allow-headers:
+      - Accept, App-Platform, Authorization, Content-Type, Origin, Retry-After, Spotify-App-Version,
+        X-Cloud-Trace-Context, client-token, content-access-token
+      access-control-allow-methods:
+      - GET, POST, OPTIONS, PUT, DELETE, PATCH
+      access-control-allow-origin:
+      - '*'
+      access-control-max-age:
+      - '604800'
+      cache-control:
+      - public, max-age=0
+      content-encoding:
+      - gzip
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Wed, 01 May 2024 22:08:27 GMT
+      etag:
+      - '"MC-Ijg2NTc3MjRhNDg3NjU5NWYzNzMyNWQ2OGFlMmQ0MzRmIg=="'
+      server:
+      - envoy
+      strict-transport-security:
+      - max-age=31536000
+      x-content-type-options:
+      - nosniff
+      x-robots-tag:
+      - noindex, nofollow
+    status:
+      code: 200
+      message: OK
+version: 1

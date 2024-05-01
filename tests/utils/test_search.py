@@ -1,5 +1,5 @@
 import pytest
-
+import os
 from spotdl.types.saved import SavedError
 from spotdl.types.song import Song
 from spotdl.utils.search import get_search_results, get_simple_songs, parse_query
@@ -16,6 +16,23 @@ ALBUM_SEARCH = ["album: yeezus"]
 QUERY = SONG + PLAYLIST + ALBUM + YT + ARTIST
 
 SAVED = ["saved"]
+
+
+@pytest.fixture
+def cleanup():
+    yield
+    # Cleanup code: Delete the file after the test
+    if os.path.exists("failedsonglog.txt"):
+        os.remove("failedsonglog.txt")
+
+
+@pytest.mark.vcr()
+def test_search_with_invalid_songs(cleanup):
+    query = ['https://open.spotify.com/playlist/3sthpHNkKM8roO6FUDC4lK?si=353f8f4e864849b6']
+    get_simple_songs(query)
+
+    # Assert that the file "failedsonglog.txt" exists
+    assert os.path.exists("failedsonglog.txt")  # You can remove this line if not needed
 
 
 @pytest.mark.vcr()
