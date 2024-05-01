@@ -105,6 +105,8 @@ def parse_query(
             try:
                 results.append(future.result())
             except Exception as exc:
+                with open('failedsonglog.txt', 'a') as failed_song_log:
+                    failed_song_log.write(f"{song.display_name}")
                 logger.error("%s generated an exception: %s", song.display_name, exc)
 
     return results
