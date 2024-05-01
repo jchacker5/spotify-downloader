@@ -44,7 +44,6 @@ def test_embed_metadata(tmpdir, monkeypatch, output_format):
         "album_id": "15b3456b34562b3456b34",
         "album_name": "Ropes",
         "album_artist": "Dirty Palm",
-        "album_year": 2021,
         "genres": ["Gaming Edm"],
         "disc_number": 1,
         "duration": 188,
