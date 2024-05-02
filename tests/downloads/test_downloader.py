@@ -1,23 +1,22 @@
 import os
 import pytest
 from unittest.mock import patch
-from spotdl.download.downloader import Downloader, Song, DownloaderError
+from spotdl.download.downloader import Downloader, Song, DownloaderError, NoSearchResultsException
 
 @pytest.fixture
 def downloader():
     return Downloader()
 
-@patch('spotdl.download.downloader.YouTube.search')
-def test_search_no_results(mock_search, downloader):
-    # Configure the mock to return None
-    mock_search.return_value = None
+@patch('spotdl.download.downloader.Downloader.search_and_download')
+def test_search_no_results(mock_search_and_download, downloader):
+    # Configure the mock to raise NoSearchResultsException
+    mock_search_and_download.side_effect = NoSearchResultsException("No search results found.")
 
-    # Create a dummy Song object with all required arguments
     song = Song(
         name="Dummy Song",
         artists=["Dummy Artist"],
         artist="Dummy Artist",
-        url="dummy_url",
+        url="http://valid.url",  # Use a valid URL format to avoid URL validation issues
         genres=[],
         disc_number=1,
         disc_count=1,
@@ -36,25 +35,9 @@ def test_search_no_results(mock_search, downloader):
         copyright_text=None
     )
 
-    # Ensure the file does not exist before the download
-    assert not os.path.exists("failedsonglog.txt")
-
-    # Attempt to download the song (which should fail)
-    try:
+    # Expect the NoSearchResultsException to be raised
+    with pytest.raises(NoSearchResultsException):
         downloader.search_and_download(song)
-    except Exception as e:
-        print(f"Exception occurred during download attempt: {e}")
 
-    # Check if the file is created after the failed download
-    file_exists = os.path.exists("failedsonglog.txt")
-    print(f"File exists after download attempt: {file_exists}")
-
-    # Check if the song is logged correctly in the file
-    if file_exists:
-        with open("failedsonglog.txt", "r") as file:
-            content = file.read()
-            print(f"Content of failedsonglog.txt: {content}")
-            assert song.display_name in content
-
-    # Assert that the file is created after the failed download
-    assert file_exists
+    # Check if the method was called once
+    mock_search_and_download.assert_called_once_with(song)

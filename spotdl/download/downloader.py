@@ -90,6 +90,13 @@ class DownloaderError(Exception):
     """
 
 
+class NoSearchResultsException(Exception):
+    """
+    Exception raised when no search results are found.
+    """
+    pass
+
+
 class Downloader:
     """
     Downloader class, this is where all the downloading pre/post processing happens etc.
@@ -260,6 +267,9 @@ class Downloader:
         ### Returns
         - list of tuples with the song and the path to the downloaded file if successful.
         """
+
+        if not songs or any(song.url is None for song in songs):
+            raise Exception("No valid song URLs found for downloading.")
 
         if self.settings["fetch_albums"]:
             albums = set(song.album_id for song in songs if song.album_id is not None)
