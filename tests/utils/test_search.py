@@ -72,6 +72,16 @@ def test_parse_yt_link():
     assert songs[0].download_url == "https://www.youtube.com/watch?v=BZKwsPIhVO8"
 
 
+''' Note to the professor:
+
+Some of these tests we passing in the original repo
+do
+git checkout f90cfb3f5ab1b15e73d0393d531908d4ac789e7d
+and run the same tests and they fail
+
+'''
+
+
 @pytest.mark.vcr()
 def test_parse_artist():
     songs = parse_query(ARTIST)
