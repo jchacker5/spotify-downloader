@@ -54,8 +54,6 @@ def save(
             data = downloader.search(song)
             if data is None:
                 logger.error("Could not find a match for %s", song.display_name)
-                with open('failedsonglog.txt', 'a') as failed_song_log:
-                    failed_song_log.write(f"{song.display_name}")
 
                 return None
 
@@ -64,8 +62,6 @@ def save(
             return {**song.json, "download_url": data}
         except Exception as exception:
             logger.error("%s generated an exception: %s", song.display_name, exception)
-            with open('failedsonglog.txt', 'a') as failed_song_log:
-                failed_song_log.write(f"{song.display_name}")
 
         return None
 
