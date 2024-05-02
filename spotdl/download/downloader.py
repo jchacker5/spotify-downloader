@@ -379,10 +379,9 @@ class Downloader:
                 return url
 
             logger.debug("%s failed to find %s", audio_provider.name, song.display_name)
-            with open('failedsonglog.txt', 'a') as failed_song_log:
+            with open("failedsonglog.txt", "a") as failed_song_log:
                 failed_song_log.write(f"{song.display_name}\n")
         raise LookupError(f"No results found for song: {song.display_name}")
-
 
     def search_lyrics(self, song: Song) -> Optional[str]:
         """
@@ -432,7 +431,7 @@ class Downloader:
         ):
             logger.error("Song is missing required fields: %s", song.display_name)
             self.errors.append(f"Song is missing required fields: {song.display_name}")
-            with open('failedsonglog.txt', 'a') as failed_song_log:
+            with open("failedsonglog.txt", "a") as failed_song_log:
                 failed_song_log.write(f"{song.display_name}\n")
 
             return song, None
@@ -462,7 +461,7 @@ class Downloader:
 
         if song.explicit is True and self.settings["skip_explicit"] is True:
             logger.info("Skipping explicit song: %s", song.display_name)
-            with open('failedsonglog.txt', 'a') as failed_song_log:
+            with open("failedsonglog.txt", "a") as failed_song_log:
                 failed_song_log.write(f"{song.display_name}\n")
             return song, None
 
@@ -663,7 +662,7 @@ class Downloader:
                     song.display_name,
                     download_url,
                 )
-                with open('failedsonglog.txt', 'a') as failed_song_log:
+                with open("failedsonglog.txt", "a") as failed_song_log:
                     failed_song_log.write(f"{song.display_name}\n")
 
                 raise DownloaderError(
@@ -745,7 +744,7 @@ class Downloader:
                 # Remove the file that failed to convert
                 if output_file.exists():
                     output_file.unlink()
-                with open('failedsonglog.txt', 'a') as failed_song_log:
+                with open("failedsonglog.txt", "a") as failed_song_log:
                     failed_song_log.write(f"{song.display_name}\n")
 
                 raise FFmpegError(

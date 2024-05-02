@@ -167,7 +167,6 @@ class Song:
         raw_search_results = Song.search(search_term)
 
         if len(raw_search_results["tracks"]["items"]) == 0:
-
             raise SongError(f"No results found for: {search_term}")
 
         return Song.from_url(
