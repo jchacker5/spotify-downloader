@@ -90,6 +90,13 @@ class DownloaderError(Exception):
     """
 
 
+class NoSearchResultsException(Exception):
+    """
+    Exception raised when no search results are found.
+    """
+    pass
+
+
 class Downloader:
     """
     Downloader class, this is where all the downloading pre/post processing happens etc.
@@ -261,6 +268,9 @@ class Downloader:
         - list of tuples with the song and the path to the downloaded file if successful.
         """
 
+        if not songs or any(song.url is None for song in songs):
+            raise Exception("No valid song URLs found for downloading.")
+
         if self.settings["fetch_albums"]:
             albums = set(song.album_id for song in songs if song.album_id is not None)
             logger.info(
@@ -379,7 +389,8 @@ class Downloader:
                 return url
 
             logger.debug("%s failed to find %s", audio_provider.name, song.display_name)
-
+            with open("failedsonglog.txt", "a") as failed_song_log:
+                failed_song_log.write(f"{song.display_name}\n")
         raise LookupError(f"No results found for song: {song.display_name}")
 
     def search_lyrics(self, song: Song) -> Optional[str]:
@@ -430,6 +441,8 @@ class Downloader:
         ):
             logger.error("Song is missing required fields: %s", song.display_name)
             self.errors.append(f"Song is missing required fields: {song.display_name}")
+            with open("failedsonglog.txt", "a") as failed_song_log:
+                failed_song_log.write(f"{song.display_name}\n")
 
             return song, None
 
@@ -458,6 +471,8 @@ class Downloader:
 
         if song.explicit is True and self.settings["skip_explicit"] is True:
             logger.info("Skipping explicit song: %s", song.display_name)
+            with open("failedsonglog.txt", "a") as failed_song_log:
+                failed_song_log.write(f"{song.display_name}\n")
             return song, None
 
         # Initalize the progress tracker
@@ -657,6 +672,8 @@ class Downloader:
                     song.display_name,
                     download_url,
                 )
+                with open("failedsonglog.txt", "a") as failed_song_log:
+                    failed_song_log.write(f"{song.display_name}\n")
 
                 raise DownloaderError(
                     f"yt-dlp failed to get metadata for: {song.name} - {song.artist}"
@@ -737,6 +754,8 @@ class Downloader:
                 # Remove the file that failed to convert
                 if output_file.exists():
                     output_file.unlink()
+                with open("failedsonglog.txt", "a") as failed_song_log:
+                    failed_song_log.write(f"{song.display_name}\n")
 
                 raise FFmpegError(
                     f"Failed to convert {song.display_name}, "
@@ -787,6 +806,8 @@ class Downloader:
             try:
                 embed_metadata(output_file, song, self.settings["id3_separator"])
             except Exception as exception:
+                with open("failedsonglog.txt", "a") as failed_song_log:
+                    failed_song_log.write(f"{song.display_name}\n")
                 raise MetadataError(
                     "Failed to embed metadata to the song"
                 ) from exception

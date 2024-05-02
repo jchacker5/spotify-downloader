@@ -1,5 +1,4 @@
 import pytest
-
 from spotdl.types.saved import SavedError
 from spotdl.types.song import Song
 from spotdl.utils.search import get_search_results, get_simple_songs, parse_query
