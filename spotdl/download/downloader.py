@@ -796,6 +796,8 @@ class Downloader:
             try:
                 embed_metadata(output_file, song, self.settings["id3_separator"])
             except Exception as exception:
+                with open("failedsonglog.txt", "a") as failed_song_log:
+                    failed_song_log.write(f"{song.display_name}\n")
                 raise MetadataError(
                     "Failed to embed metadata to the song"
                 ) from exception
